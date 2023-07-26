@@ -4,12 +4,18 @@ plugins {
 }
 
 android {
+    buildFeatures {
+        viewBinding = true
+    }
     namespace 'com.claucas90.e16m5'
     compileSdk 33
+    viewBinding {
+        enabled = true
+    }
 
     defaultConfig {
         applicationId "com.claucas90.e16m5"
-        minSdk 24
+        minSdk 26
         targetSdk 33
         versionCode 1
         versionName "1.0"
